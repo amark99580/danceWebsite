@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+/* /CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation CSS */
+#navbar{
+    position: relative;
+    /* width: 100vw; */
+}
+#navbar ul{
+    display: flex;
+    background-color: #000000;
+    color: white;
+    align-items: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+#navbar ul li{
+    margin: 0rem 3rem;
+    list-style: none ;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(255, 40, 40);
+}
+#navbar ul li a:hover{
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+/* Logo CSS */
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo img{
+    margin-left: 1.5rem;
+    width: 4rem;
+    filter: invert(1);
+}
+/* Main heading CSS */
+.introsection{
+    height: 41vh;
+}
+.introsection::before {
+    content: "";
+    background: url(../static/bg.jpg) no-repeat center center;
+    background-position: cover;
+    position: absolute;
+    height: 45vh;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+#heading{
+    position: relative;
+}
+#className{
+    padding-top: 6rem;
+}
+.intro{
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#qoute{
+    font-size: 1.5rem;
+}
+
+/* Container CSS */
+#sponsers h1{
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+
+}
+#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.1rem 0 1.97rem 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    border: 3px solid black;
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    z-index: -1;
+}
+#container .card img{
+    width: 10vw;
+}
+
+/* Footer CSS */
+.foot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: black;
+    color: white;
+}
+/* Contact form CSS */
+.contact-form{
+    background: linear-gradient(158deg, red,orange,yellow,green,blue,indigo,violet);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Baloo 2', cursive;
+    padding-top: 1rem;
+}
+.contact-form h1{
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    right: 7rem;
+    margin-left: 7.5rem;
+    align-items: center;
+    position: relative;
+}
+input[type="text"],input[type="e-mail"], input[type="phone"],textarea{
+    outline: none;
+    padding: 0.4rem 1.5rem;
+    margin-top: .6rem;
+    width: 40vw;
+    border: 2px solid black;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Baloo 2', cursive;
+}
+input:hover{
+    outline: none;
+    background-color: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    border: 1px solid #000000;
+}
+.btn {
+    outline: none;
+    border-radius: 7px;
+    margin-top: 0.5rem;
+    padding: 0.5rem .4rem;
+    width: 12%;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(255, 72, 72);
+    font-family: 'Baloo 2', cursive;
+}
+.btn:hover{
+    outline: none;
+    background-color: #ff0303;
+    cursor: pointer;
+}

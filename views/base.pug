@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Amar Dance Academy 
+
+    block style 
+  body
+    nav#navbar
+      ul 
+        div#logo
+          img(src="../static/logo.png")
+          | ADA 
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Class Info]
+        li #[a(href="/contact") Contact Us]
+
+    block content
+
+    footer.foot
+        | Copyright &copy; 2023 www.amardanceacademy.com. All rights reservred!

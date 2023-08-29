@@ -1,0 +1,29 @@
+extends base.pug
+
+
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/mobile.css
+
+block content 
+     
+    section 
+      div.introsection
+        div#heading
+          h2.intro#className  Welcome to Amar Dance Academy 
+          h4.intro#qoute  Dance with your heart and your feet will follow
+
+    section#sponsers 
+      h1 Let's Dance
+      div#container
+        div.card 
+          img(src="../static/1.png")
+          p Dancing is like dreaming with your feet!
+        div.card 
+          img(src="../static/2.png")
+          p The job of feet is walking, but their hobby is dancing
+        div.card 
+          img(src="../static/3.png")
+          p Do it big, do it right, and do it with style
